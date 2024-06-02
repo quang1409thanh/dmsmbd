@@ -1,5 +1,4 @@
-Chào bạn! Dưới đây là bảng so sánh giữa Oracle Database và MySQL để bạn có thể thấy được những điểm nổi bật của mỗi hệ quản trị cơ sở dữ liệu.
-
+So sánh
 | Tiêu chí           | Oracle Database                                   | MySQL                                           |
 |--------------------|---------------------------------------------------|-------------------------------------------------|
 | **Phát triển bởi** | Oracle Corporation                                | MySQL AB (nay thuộc sở hữu của Oracle Corporation) |
