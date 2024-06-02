@@ -1,4 +1,4 @@
-Dưới đây là giải thích chi tiết các bước thiết lập Data Guard theo các câu lệnh mà bạn đã gửi:
+Dưới đây là giải thích chi tiết các bước thiết lập Data Guard
 
 ### Thiết lập biến môi trường
 
