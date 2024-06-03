@@ -284,3 +284,14 @@ Những chức năng này cùng nhau tạo nên một hệ thống Oracle Data G
 
 
 video: [youtube](https://youtu.be/Km4wyIV722k?si=hza_zyQoimd9EqQE)
+
+
+Đúng, trong Oracle Data Guard, bạn có thể thay đổi vai trò của các cơ sở dữ liệu giữa primary và standby. Quá trình chuyển đổi vai trò này được gọi là switchover (đổi chỗ) hoặc failover (chuyển đổi), tùy thuộc vào cách mà quá trình được kích hoạt và mục đích của nó.
+
+1. **Switchover**: Switchover là quá trình kế hoạch được thực hiện tự nguyện để chuyển đổi vai trò giữa primary và standby một cách kiểm soát. Khi thực hiện switchover, bạn dự định chuyển đổi từ primary sang standby hoặc từ standby sang primary mà không có sự cố nào xảy ra trước đó. Switchover giúp bạn thực hiện bảo trì hoặc thử nghiệm hệ thống mà không làm gián đoạn hoạt động của ứng dụng.
+
+2. **Failover**: Failover là quá trình tự động kích hoạt để chuyển đổi từ primary sang standby khi có sự cố xảy ra trên primary và không thể khắc phục. Khi thực hiện failover, mục tiêu là để nhanh chóng khôi phục hoạt động của hệ thống và dữ liệu sau một sự cố không mong muốn.
+
+Trong cả hai trường hợp, sau khi vai trò được chuyển đổi, cơ sở dữ liệu mới trong vai trò primary sẽ tiếp tục ghi redo log và cơ sở dữ liệu mới trong vai trò standby sẽ tiếp tục nhận và áp dụng redo log từ primary mới.
+
+Tóm lại, việc đổi vai trò giữa primary và standby trong Oracle Data Guard có thể được thực hiện thông qua quá trình switchover hoặc failover, tùy thuộc vào tình huống và mục đích cụ thể của bạn.
